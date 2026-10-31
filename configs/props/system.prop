@@ -23,7 +23,7 @@ mmp.enable.3g2=true
 persist.mm.enable.prefetch=true
 
 # Lunaris Maintainer
-ro.lunaris.maintainer=achu
+ro.lunaris.maintainer=Oggy_bhai
 
 # Radio
 ril.subscription.types=RUIM
