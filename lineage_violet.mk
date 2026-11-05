@@ -16,8 +16,8 @@ TARGET_USES_DOLBY := true
 # Inherit from violet device
 $(call inherit-product, device/xiaomi/violet/sm6150.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit Evolution X common config
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_violet
@@ -44,7 +44,3 @@ $(call inherit-product, vendor/miuicamera-violet/device.mk)
 
 # OTA packaging fix
 PRODUCT_SYSTEM_PROPERTIES += ro.build.product=violet
-
-# RisingOS
-WITH_GMS := true
-RISING_MAINTAINER := sexaoggy
