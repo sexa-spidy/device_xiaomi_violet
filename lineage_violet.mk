@@ -44,3 +44,10 @@ $(call inherit-product, vendor/miuicamera-violet/device.mk)
 
 # OTA packaging fix
 PRODUCT_SYSTEM_PROPERTIES += ro.build.product=violet
+
+# Evolution X build flags
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_TOUCHGESTURES := true
+TARGET_USES_MIUI_CAMERA := true
