@@ -10,6 +10,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 TARGET_SUPPORTS_OMX_SERVICE := false
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
+# Dolby (must be set before sm6150.mk is inherited)
+TARGET_USES_DOLBY := true
+
 # Inherit from violet device
 $(call inherit-product, device/xiaomi/violet/sm6150.mk)
 
@@ -32,3 +35,16 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 # Camera torch strength extension
 PRODUCT_PACKAGES += \
     libcameraservice_extension.sm6150
+
+# Dolby
+$(call inherit-product, vendor/oneplus/dolby/dolby.mk)
+
+# MIUI camera (uncomment after checking the .mk filename in vendor/miuicamera-violet)
+# $(call inherit-product, vendor/miuicamera-violet/device.mk)
+
+# OTA packaging fix
+PRODUCT_SYSTEM_PROPERTIES += ro.build.product=violet
+
+# RisingOS
+WITH_GMS := true
+RISING_MAINTAINER := sexaoggy
