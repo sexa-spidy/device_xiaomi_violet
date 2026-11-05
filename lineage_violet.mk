@@ -39,8 +39,8 @@ PRODUCT_PACKAGES += \
 # Dolby
 $(call inherit-product, vendor/oneplus/dolby/dolby.mk)
 
- MIUI camera (uncomment after checking the .mk filename in vendor/miuicamera-violet)
- $(call inherit-product, vendor/miuicamera-violet/device.mk)
+# MIUI camera
+$(call inherit-product, vendor/miuicamera-violet/device.mk)
 
 # OTA packaging fix
 PRODUCT_SYSTEM_PROPERTIES += ro.build.product=violet
