@@ -46,6 +46,12 @@ $(call inherit-product, vendor/miuicamera-violet/device.mk)
 PRODUCT_SYSTEM_PROPERTIES += ro.build.product=violet
 
 # Evolution X build flags
+EVO_BUILD_TYPE := Unofficial
+WITH_GMS := true
+TARGET_USES_MINI_GAPPS := true
+TARGET_USES_PICO_GAPPS := false
+BUILD_BCR := true
+TARGET_ENABLE_BLUR := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_QUICK_TAP := true
