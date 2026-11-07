@@ -48,8 +48,8 @@ PRODUCT_SYSTEM_PROPERTIES += ro.build.product=violet
 # Evolution X build flags
 EVO_BUILD_TYPE := Unofficial
 WITH_GMS := true
-TARGET_USES_MINI_GAPPS := true
-TARGET_USES_PICO_GAPPS := false
+TARGET_USES_MINI_GAPPS := false
+TARGET_USES_PICO_GAPPS := true
 BUILD_BCR := true
 TARGET_ENABLE_BLUR := true
 TARGET_BOOT_ANIMATION_RES := 1080
