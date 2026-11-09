@@ -36,3 +36,8 @@ WITH_GMS := true
 LUNARIS_BUILD_TYPE := UNOFFICIAL
 SURFACE_FLINGER_BOOST := true
 TARGET_ENABLE_BLUR := true
+
+
+# Blur support (SurfaceFlinger property)
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.surface_flinger.supports_background_blur=1
